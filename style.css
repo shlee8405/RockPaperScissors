@@ -1,0 +1,70 @@
+html {
+    background: url(./Images/cube.jpg) bottom center;
+    background-size: cover;
+    min-height:100vh;
+}
+main {
+    min-height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    background: white;
+    min-height: 60vh;
+    width: 70%;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+    border-radius: 2rem;
+    backdrop-filter: blur(2rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+
+.score {
+
+}
+
+
+.scores {
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.userScore {
+    margin: 2rem;
+}
+.computerScore {
+    margin: 2rem;
+}
+
+
+.buttons {
+    opacity: 0.9;
+
+}
+
+button {
+    min-width: 10vw;
+    min-height: 10vh;
+    border-radius: 2rem;
+}
+
+button:hover {
+    scale: 1.1;
+}
+
+.screenLock {
+    min-height:100vh;
+    min-width:100vw;
+    z-index: 3;
+    position: absolute;
+    top:0px;
+    left:0px;
+    background-color:red;
+    opacity:0.2;
+}

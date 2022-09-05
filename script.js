@@ -111,8 +111,25 @@ function computerWin() {
     }
 }
 
+var id = null;
+function myMove() {
+  var elem = document.getElementById("screenLock");
+  var pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 10);
+  function frame() {
+    if (pos == 100) {
+      clearInterval(id);
+    } else {
+      pos++;
+      elem.style.top = pos + '%';
+      elem.style.left = pos + '%';
+    }
+  }
+}
 
 
+myMove();
 window.addEventListener('click', gameStart);
 
 

@@ -5,21 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
     <main>
-        <div class="score">
-            <div class="gameResult"></div>
-            <div class="userScore"></div>
-            <div class="computerScore"></div>
+        <div class="menu">
+            <div class="score">
+                <div class="gameResult"></div>
+                <div class ="scores">
+                    <div class="userScore">User Score: </div>
+                    <div class="computerScore">Computer Score: </div>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button class="rock">Rock</button>
+                <button class="paper">Paper</button>
+                <button class="scissors">Scissors</button>
+            </div>
         </div>
-        <div class="buttons">
-            <button class="rock">Rock</button>
-            <button class="paper">Paper</button>
-            <button class="scissors">Scissors</button>
-        </div>
+
     </main>
+    <div id="screenLock" class="screenLock"></div>
 
     <script src="script.js"></script>
 </body>
