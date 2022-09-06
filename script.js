@@ -111,25 +111,25 @@ function computerWin() {
     }
 }
 
-var id = null;
-function myMove() {
-  var elem = document.getElementById("screenLock");
-  var pos = 0;
-  clearInterval(id);
-  id = setInterval(frame, 10);
-  function frame() {
-    if (pos == 100) {
-      clearInterval(id);
-    } else {
-      pos++;
-      elem.style.top = pos + '%';
-      elem.style.left = pos + '%';
-    }
-  }
-}
+
+//Start Menu.
+let startMenu = document.getElementById('startMenu');
+let startButton = document.getElementById('startButton');
+let startMenuSpinning = [
+    { transform: 'rotate(0) scale(1)' },
+    { transform: 'rotate(0) scale(0)'}
+];
+
+let startMenuTiming = {
+    duration: 2000,
+    iterations: 1,
+};
+
+startButton.addEventListener('click', function() {
+    startMenu.animate(startMenuSpinning, startMenuTiming)
+});
 
 
-myMove();
 window.addEventListener('click', gameStart);
 
 

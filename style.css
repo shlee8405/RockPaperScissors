@@ -68,3 +68,13 @@ button:hover {
     background-color:red;
     opacity:0.2;
 }
+
+#startButton {
+    position: absolute;
+    top: 45%;
+}
+
+#screenLock {
+    display:flex;
+    justify-content: center;
+}
